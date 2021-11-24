@@ -16,12 +16,7 @@ public class Mathematics {
     }
 
     public static void main(String[] args) {
-       // Mathematics mathematics = new Mathematics();
-        //System.out.println(mathematics.squareMaxSum(3, 2, 5));
-        System.out.println(Integer.MAX_VALUE );
-        int sum = 12*12+7*7;
-        System.out.println(sum);
-
+        System.out.println(new Mathematics().squareMaxSum(3, 2, 5));
     }
 
 
