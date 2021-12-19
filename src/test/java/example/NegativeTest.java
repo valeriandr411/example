@@ -19,5 +19,6 @@ public class NegativeTest {
     @Test(dataProvider = "testEqualsNegative")
     public void testMathOperationNegative(int a, int b, int c, int expect) {
         int result =new Mathematics().squareMaxSum(a,b,c);
+        assertEquals(result,expect,"Значения не равны");
     }
 }

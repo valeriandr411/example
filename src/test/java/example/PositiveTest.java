@@ -10,7 +10,6 @@ public class PositiveTest {
     public Object[][]testEquals() {
         return new Object[][]{
                 {1, 2, 3, 13},
-                {3, 3, 3, 18},
                 {0, 0, 0, 0},
                 {-125, 13, 63, 19594},
                 {-12, 8, -13, 313},
@@ -19,7 +18,7 @@ public class PositiveTest {
     @Test(dataProvider = "testEquals")
     public void testMathOperation(int a, int b, int c, int expect) {
         int result =new Mathematics().squareMaxSum(a,b,c);
-        assertEquals(result,expect);
+        assertEquals(result,expect,"Значения не равны");
     }
 
 
